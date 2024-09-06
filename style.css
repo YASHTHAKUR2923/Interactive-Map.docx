@@ -1,0 +1,35 @@
+/* Set height and width for the map */
+#map {
+    height: 90vh;
+    width: 100%;
+  }
+  
+  /* Styling for the controls (dropdown and button) */
+  .controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Animation for pop-up fade-in */
+  .leaflet-popup-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
